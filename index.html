@@ -4,13 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alexander Polefko</title>
-<meta name="description" content="Alexander Polefko — Senior Product Manager building healthcare education products at Elsevier. MS in AI at UT Austin. Former Army officer, game-industry alum.">
+<meta name="description" content="Alexander Polefko — Senior Product Manager building healthcare education products at Elsevier. MS in AI from UT Austin. Former Army officer, game-industry alum.">
 <meta property="og:title" content="Alexander Polefko">
 <meta property="og:description" content="Senior Product Manager · Healthcare EdTech · MSAI">
 <meta property="og:image" content="https://alexandermpolefko.info/assets/headshot.jpg">
 <meta property="og:url" content="https://alexandermpolefko.info/">
 <link rel="canonical" href="https://alexandermpolefko.info/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<script>
+  // Apply saved theme before paint: "light" | "dark" | absent (auto)
+  try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -28,6 +33,9 @@
       <a href="#about"><span class="num">01</span> About</a>
       <a href="#experience"><span class="num">02</span> Experience</a>
       <a href="#shipped"><span class="num">03</span> Shipped</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Color theme: auto">
+        <span class="theme-dot" aria-hidden="true"></span><span class="theme-label">Auto</span>
+      </button>
     </nav>
   </div>
 </header>
@@ -37,35 +45,35 @@
   <section class="cover">
     <p class="docline"><span>DOC. AP-001</span><span>PERSONNEL FILE</span><span>REV. 2026.11</span></p>
     <h1>Alexander Polefko</h1>
-    <p class="role">Senior Product Manager &middot; Healthcare EdTech &middot; MS&nbsp;in&nbsp;AI</p>
+    <p class="role">Senior Product Manager &middot; Healthcare EdTech &middot; MSAI</p>
     <p class="lede">I build learning products for the people who take care of everyone else &mdash; nurses, dental assistants, radiologic technologists. Before that: marketing software, Army logistics, and video game trailers.</p>
   </section>
 
   <section id="about" class="section">
-    <h2><span class="sec">&sect;01</span> About</h2>
+    <h2><span class="sec">[01]</span> About</h2>
     <div class="about-grid">
       <figure class="portrait">
         <img src="assets/headshot.jpg" alt="Portrait of Alexander Polefko" width="560" height="560">
         <figcaption>FIG. 1 &mdash; The author</figcaption>
       </figure>
       <div class="prose">
-        <p>I&rsquo;m a product manager at Elsevier, where I lead teams building <strong>Sherpath</strong> for allied health and health professions programs, including the Sherpath AI features. Before that I spent nearly five years building nursing simulations on the <strong>Shadow Health</strong> line.</p>
-        <p>In general, I love trying new technology, helping build it, and working with teams who care about the craft. These days that means a lot of time with AI models, both on side projects at <a href="https://somnolentlabs.com/">Somnolent Labs</a> and in my Master&rsquo;s in AI at UT Austin.</p>
+        <p>I&rsquo;m a Senior Product Manager at Elsevier, where I manage courseware for allied health and health professions: <strong>Sherpath</strong>, <strong>SimChart for the Medical Office</strong>, and <strong>HESI SafeMed</strong>, a medication-safety program for nursing students. Before that I spent nearly five years building nursing simulations on the <strong>Shadow Health</strong> line.</p>
+        <p>I like being close to new technology, helping build it, and working with teams who care about the craft. I finished my Master&rsquo;s in AI at UT Austin in May 2026, and I keep shipping small things on the side through <a href="https://somnolentlabs.com/">Somnolent Labs</a>: mostly AI tools, and games when I can.</p>
         <p>The path here had some turns. I&rsquo;ve cut trailers for video games, worked as a fry cook, written in-game tutorials, and moved U.S. Army equipment across an ocean.</p>
 
         <dl class="spec">
           <div><dt>Favorite game</dt><dd>The Legend of Zelda: Majora&rsquo;s Mask</dd></div>
           <div><dt>Favorite film</dt><dd>Lost in Translation <span class="aside">(Tron is close)</span></dd></div>
           <div><dt>Training</dt><dd>Brazilian Jiu-Jitsu &middot; blue belt, Marcelo Garcia Association</dd></div>
-          <div><dt>Unit</dt><dd>Two goofy dogs, Gremlin and Dua</dd></div>
-          <div><dt>Now reading</dt><dd><em>Build</em>, Tony Fadell</dd></div>
+          <div><dt>Unit</dt><dd>Hallie (my wife) and our two goofy dogs, Gremlin and Dua</dd></div>
+          <div><dt>Now reading</dt><dd><em>The Count of Monte Cristo</em>, Alexandre Dumas</dd></div>
         </dl>
       </div>
     </div>
   </section>
 
   <section id="experience" class="section">
-    <h2><span class="sec">&sect;02</span> Experience</h2>
+    <h2><span class="sec">[02]</span> Experience</h2>
 
     <article class="entry">
       <div class="when">2020 &mdash; Now</div>
@@ -74,25 +82,26 @@
         <ul class="roles">
           <li>
             <p class="title">Senior Product Manager <span class="dates">Jul 2025 &ndash; present</span></p>
-            <p>Sherpath for Health Professions: Dental Assisting and Medical Assisting (both with Sherpath AI) and Radiologic Technology.</p>
+            <p>Manage Courseware, SimChart for the Medical Office, Allied Health and Health Professions, and <a href="https://www.elsevier.com/products/hesi-safemed">HESI SafeMed</a>.</p>
+            <p class="shipped"><span class="k">Shipped</span> Sherpath for Dental Assisting &middot; Sherpath for Radiologic Technology &middot; Sherpath Anatomy and Physiology</p>
           </li>
           <li>
             <p class="title">Product Manager, Shadow Health <span class="dates">Oct 2020 &ndash; Jul 2025</span></p>
-            <p>Led cross-functional teams of designers and developers building nursing simulations. Worked directly with nurse educators and learners, and with art, engineering, learning design and UX teams. Shipped Fundamentals of Nursing, Pathophysiology, and Advanced Primary Care: Women&rsquo;s Reproductive Health (all new), plus an upgrade of Health Assessment.</p>
+            <p class="shipped"><span class="k">Shipped</span> Fundamentals of Nursing &middot; Pathophysiology &middot; Advanced Primary Care: Women&rsquo;s Reproductive Health &middot; Health Assessment upgrade &middot; Gerontology <abbr title="Digital Clinical Experience">DCE</abbr> update for UI/UX and <abbr title="Clinical Judgment Measurement Model">CJMM</abbr></p>
           </li>
         </ul>
       </div>
     </article>
 
     <article class="entry">
-      <div class="when">2015 &mdash; 2021</div>
+      <div class="when">2015 &mdash; 2023</div>
       <div class="what">
         <h3>Florida Army National Guard</h3>
         <ul class="roles">
-          <li><p class="title">Executive Officer, HQ Battery <span class="dates">2020 &ndash; 2021</span></p></li>
-          <li><p class="title">Movement Officer <span class="dates">2019 &ndash; 2020</span></p></li>
+          <li><p class="title">Executive Officer, HQ Battery</p></li>
+          <li><p class="title">Movement Officer</p></li>
           <li>
-            <p class="title">Soldier &rarr; Officer <span class="dates">2015 &ndash; 2018</span></p>
+            <p class="title">Soldier &rarr; Officer</p>
             <p>Basic training, Officer Candidate School and commissioning, then a first assignment that included Hurricane Irma.</p>
           </li>
         </ul>
@@ -130,7 +139,7 @@
       <div class="when">Education</div>
       <div class="what">
         <ul class="roles flat">
-          <li><p class="title">The University of Texas at Austin <span class="dates">MS, Artificial Intelligence &middot; in progress</span></p></li>
+          <li><p class="title">The University of Texas at Austin <span class="dates">MS, Artificial Intelligence (MSAI) &middot; May 2026</span></p></li>
           <li><p class="title">Western Governors University <span class="dates">BS, Computer Science &middot; 2023</span></p></li>
           <li><p class="title">University of Florida <span class="dates">BS, Telecommunication &middot; 2014</span></p></li>
         </ul>
@@ -139,10 +148,18 @@
   </section>
 
   <section id="shipped" class="section">
-    <h2><span class="sec">&sect;03</span> Shipped</h2>
+    <h2><span class="sec">[03]</span> Shipped</h2>
     <p class="intro">Things I&rsquo;ve made outside the day job.</p>
 
     <ul class="log">
+      <li>
+        <a href="https://f1timezone.com/">
+          <span class="tag">SITE</span>
+          <span class="name">F1 Timezone</span>
+          <span class="desc">Every F1 session of the season, converted to US time zones.</span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
       <li>
         <a href="https://somnolentlabs.com/">
           <span class="tag">TOOL</span>
@@ -176,7 +193,6 @@
         </a>
       </li>
     </ul>
-    <p class="note">The three jams ran over three months in Unreal Engine 5 and Unity.</p>
   </section>
 
 </main>
@@ -193,5 +209,26 @@
   </div>
 </footer>
 
+<script>
+  // Theme toggle: Auto -> Light -> Dark -> Auto
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme-toggle");
+    var order = ["auto", "light", "dark"], names = { auto: "Auto", light: "Light", dark: "Dark" };
+    function current() { return root.dataset.theme || "auto"; }
+    function render() {
+      var m = current();
+      btn.querySelector(".theme-label").textContent = names[m];
+      btn.setAttribute("aria-label", "Color theme: " + names[m] + ". Click to change.");
+      btn.dataset.mode = m;
+    }
+    btn.addEventListener("click", function () {
+      var next = order[(order.indexOf(current()) + 1) % order.length];
+      if (next === "auto") delete root.dataset.theme; else root.dataset.theme = next;
+      try { next === "auto" ? localStorage.removeItem("theme") : localStorage.setItem("theme", next); } catch (e) {}
+      render();
+    });
+    render();
+  })();
+</script>
 </body>
 </html>
